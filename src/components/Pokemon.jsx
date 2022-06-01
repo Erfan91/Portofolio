@@ -31,12 +31,10 @@ const Pokemon = () => {
     btnNext.addEventListener('click', setNum(num + 1), console.log(num));
     const btnPrev = div[0].children[0];
     setVar(btnPrev)
-    // btnPrev.addEventListener('click',settext('Connect 4 a project that was given to me by My formateurs  to improve my front-end skills using react and CSS'))
+    
     dispaly(num)
   }
-  // const dolf = (event)=>{
-  // console.log(event.currentTarget)
-  // }
+
 
   const imags = [
     {

@@ -48,7 +48,7 @@ const Home = () => {
   const changer = (variable) => {
     if (counter >0) {
       console.log(counter)
-      // setLines("arrivé en france en 2019, après avoir obtenu mes papiers en 2020 j'ai commencé à apprendre le français en quatre mois grâce à mission locale, peu de temps après le cours de langue j'ai obtenu un job étudiant comme enquêteur des transports annoncé par la RATP. en travaillant comme enquêteur, j'ai acquis ma première expérience professionnelle dans le monde du travail français, grâce à cette expérience j'ai appris à comprendre comment travailler professionnellement et j'ai acquis certaines compétences pour m'adapter dans le mond de travil, apprendre rapidement, être autonome pendant que j'étais le responsable pour certaines missions et pour être ponctuel car nous devions assurer le service avant le début des transports en commun, et j'ai appris à être concentré et attentif dans le calcul et à la fin du quart de travail je devais rapporter les résultats d'enquête à notre responsable.")
+      
       setLines('Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto consequatur quas perferendis est fugit, a numquam nobis nisi nostrum blanditiis perspiciatis velit sequi illum. Atque, omnis minus! Magnam architecto eaque harum ullam esse veniam! Consequatur ut laboriosam dolores autem. Illo enim libero cum sunt nisi aliquam ullam placeat praesentium facilis doloremque, non voluptates fugit vel quibusdam, tempora reiciendis saepe ex commodi fugiat delectus numquam debitis distinctio aperiam quos? Maxime recusandae architecto in repellat vel dicta laboriosam facilis sequi inventore doloremque id vero repellendus fugit, deserunt obcaecati quod. Magni quod quidem illum labore praesentium tempore, ad consequuntur quaerat molestias assumenda.')
       setPicture(TT)
     } else if (counter === 'B') {
@@ -168,46 +168,3 @@ const Home = () => {
   hello
 </motion.h1>
 export default Home
-{/* <Div className='class-div' onClick={imageHandler}>
-
-    <div className='div-pro' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('A') }}>
-      <h3 className='head3' id='Ip'> Parcours Professionnelle</h3>
-    </div>
-    <div className='nord div-win' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('B') }}>  <h3 className='head3' id='I'>Informatique et Dévéloppement</h3></div>
-    <div className='nord div-skill' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('C') }}>  <h3 className='head3' id='ii'>Compétence professionnelle</h3></div>
-    <div className='nord div-globe' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('D') }}>  <h3 className='head3' id='iii'>La France et le monde</h3></div>
-    <div className='nord div-music' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('E') }}>  <h3 className='head3' id='i4'>Musique</h3></div>
-    <div className='nord div-passion' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('F') }}>  <h3 className='head3' id='i5'>Passion</h3></div>
-    <div className='nord div-fcb' style={{ width: '36.5% ', height: '9%', border: '1px solid violet', textAlign: 'center', borderTop: 'none', borderLeft: 'none' }} onClick={() => { setCount('G') }}>  <h3 className='head3' id='i6'>Career Football</h3></div>
-    <div className='mainDiv'
-    onMouseMove={onMoves}
-    onMouseEnter={(e)=>{
-    setRefDiv(e.currentTarget)
-    setCC(newCC +1)
-  }}
-  ref={refDiv}
-    >
-      <motion.p
-      className='parc-p'
-      >{lines}</motion.p>
-      <p className='parc-p1'>{lines}</p>
-    </div>
-    <div className='offset-md-3 id-div page'>
-      <motion.h1
-        style={{ maxWidth: '100%', width: '100%' }}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1
-        }}
-        transition={{ duration: 1 }}
-        className='von'>Sayed Erfan</motion.h1>
-      <motion.h4
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >Web developer and designer</motion.h4>
-
-    </div>
-    <img src={TT} width='50%' style={{ position: 'absolute', transform: 'translate(74%)', top: '25.9%' }} />
-
-  </Div> */}

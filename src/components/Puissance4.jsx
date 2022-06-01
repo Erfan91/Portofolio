@@ -27,7 +27,7 @@ const Puissance4 = (props) => {
     
      btnNext.addEventListener('click', settext('Game functionality is 100%, Game stops if any palyer(Red, Yellow) connected four circles faster Horizontaly, Verticaly, or Digonal. when they win, game changes its background color by help of React '));
     const btnPrev = div[0].children[0];
-    // btnPrev.addEventListener('click',settext('Connect 4 a project that was given to me by My formateurs  to improve my front-end skills using react and CSS'))
+  
   }
 
   const iconStyle = { color:color, width: '60px', fontSize: "2em" }

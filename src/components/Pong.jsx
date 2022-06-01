@@ -27,8 +27,7 @@ const Pong = () => {
     
      btnNext.addEventListener('click', settext('hello how are you'));
     const btnPrev = div[0].children[0];
-  
-    // btnPrev.addEventListener('click',settext('Connect 4 a project that was given to me by My formateurs  to improve my front-end skills using react and CSS'))
+
     
   }
   const imags = [
