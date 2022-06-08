@@ -30,7 +30,7 @@ height:100vh;
 display:flex;
 
 `;
-const iconStyle = { color: '#0d6efd', width: '60px', fontSize: "2.5em", paddingBottom: '20px' }
+const iconStyle = { color: '#0d6efd', width: '60px', fontSize: "2.5em", paddingBottom: '20px',marginBottom:'25px' }
 function App() {
   const [text, setText] = useState('');
   const [name, setName] = useState('')
@@ -52,7 +52,7 @@ function App() {
         >{name}</motion.span>
         <div className='center'>
           <Link to='/'><FaHome
-            className='jj one' style={iconStyle} onClick={() => { return setName('Home') }} onMouseEnter={() => { return setText('Home') }} onMouseLeave={() => { return setText('') }} /></Link>
+            className='jj one'  style={iconStyle} onClick={() => { return setName('Home') }} onMouseEnter={() => { return setText('Home') }} onMouseLeave={() => { return setText('') }} /></Link>
           <Link to='/projets'><FaProjectDiagram className='jj one' style={iconStyle} onClick={() => { return setName('Projets') }} onMouseEnter={() => { return setText('Projets') }} onMouseLeave={() => { return setText('') }} /></Link>
           <Link to='/Cv'><FaRegFileAlt className='jj one' style={iconStyle} onClick={() => { return setName('Resume') }} onMouseEnter={() => { return setText('Resume') }} onMouseLeave={() => { return setText('') }} /></Link>
           <Link to='/contact'><FaUserPlus className='jj one' style={iconStyle} onClick={() => { return setName('Contact') }} onMouseEnter={() => { return setText('Contact') }} onMouseLeave={() => { return setText('') }} /></Link>

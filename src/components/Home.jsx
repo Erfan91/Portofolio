@@ -30,7 +30,8 @@ const iconStyle = { color: 'navy', width: '60px', fontSize: "2.5em", paddingBott
 const Home = () => {
   const [lines, setLines] = useState('');
   const [picture, setPicture] = useState('');
-  const [counter, setCount] = useState(0)
+  // let [counter, setCount] = useState(0)
+  let [counter,setCount] = useState(0)
   const [cssValX, setCssValX] = useState('')
   const [cssValY, setCssValY] = useState('');
   const [newCC, setCC] = useState(0)
@@ -46,27 +47,26 @@ const Home = () => {
   }
   console.log(80 / 3)
   const changer = (variable) => {
-    if (counter >0) {
+    if (counter ===1) {
       console.log(counter)
-      
       setLines('Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto consequatur quas perferendis est fugit, a numquam nobis nisi nostrum blanditiis perspiciatis velit sequi illum. Atque, omnis minus! Magnam architecto eaque harum ullam esse veniam! Consequatur ut laboriosam dolores autem. Illo enim libero cum sunt nisi aliquam ullam placeat praesentium facilis doloremque, non voluptates fugit vel quibusdam, tempora reiciendis saepe ex commodi fugiat delectus numquam debitis distinctio aperiam quos? Maxime recusandae architecto in repellat vel dicta laboriosam facilis sequi inventore doloremque id vero repellendus fugit, deserunt obcaecati quod. Magni quod quidem illum labore praesentium tempore, ad consequuntur quaerat molestias assumenda.')
       setPicture(TT)
-    } else if (counter === 'B') {
+    } else if (counter === 2) {
       setLines('Polar bear')
       setPicture(bg6)
-    } else if (counter === 'C') {
+    } else if (counter === 3) {
       setLines('background THREE')
       setPicture(bg6)
-    } else if (counter === 'D') {
+    } else if (counter === 4) {
       setLines('Background FOUR')
       setPicture(bg6)
-    } else if (counter === 'E') {
+    } else if (counter === 5) {
       setLines('Background FIFTH')
       setPicture(bg6)
-    } else if (counter === 'F') {
+    } else if (counter === 6) {
       setLines('Background SIXTH')
       setPicture(bg6)
-    } else if (counter === 'G') {
+    } else if (counter === 7) {
       setLines('Backgroun SEVENTH')
       setPicture(bg6)
     }
@@ -100,31 +100,31 @@ const Home = () => {
     <div className='hm-bg nord' onClick={imageHandler}>
       <div className="-bg-child1" >
         {/*Parcours div*/}
-        <div className='div-pro nord' onClick={()=>{setCount(+1)}}>
+        <div className='div-pro nord' onClick={()=>{setCount(counter =1)}}>
           <h3 className='head3' id='I'> Parcours Professionnelle</h3>
         </div>
         {/*Computer div*/}
-        <div className='div-win nord'>
+        <div className='div-win nord'  onClick={()=>{setCount(counter =2)}}>
           <h3 className='head3' id='I'>Informatique et Dévéloppement</h3>
         </div>
         {/*Skills div*/}
-        <div className='div-skill nord'>
+        <div className='div-skill nord'  onClick={()=>{setCount(counter =3)}}>
           <h3 className='head3' id='I'>Compétence professionnelle</h3>
         </div>
         {/*Fr/globe div*/}
-        <div className='div-globe nord'>
+        <div className='div-globe nord'  onClick={()=>{setCount(counter =4)}}>
           <h3 className='head3' id='I'>La France et le monde</h3>
         </div>
         {/*Music div*/}
-        <div className='div-music nord'>
+        <div className='div-music nord'  onClick={()=>{setCount(counter =5)}}>
           <h3 className='head3' id='I'>Musique</h3>
         </div>
         {/*Passion div*/}
-        <div className='div-passion nord'>
+        <div className='div-passion nord'  onClick={()=>{setCount(counter =6)}}>
           <h3 className='head3' id='I'>Passion</h3>
         </div>
         {/*Passion div*/}
-        <div className='div-fcb nord'>
+        <div className='div-fcb nord'  onClick={()=>{setCount(counter =7)}}>
           <h3 className='head3' id='I'>Career Football</h3>
         </div>
       </div>

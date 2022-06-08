@@ -79,6 +79,12 @@
   
 }
 
+/* .jj{
+  border-left: 5px solid red;
+  margin-bottom: 25px;
+  
+} */
+
 
 .center {
   position: absolute;
@@ -95,7 +101,7 @@
       rgb(86, 0, 215),
       rgb(137, 0, 200),
       rgb(94, 0, 0));
-
+  
 }
 
 .lgh {
@@ -534,10 +540,28 @@ swiper-slide-next {
 
 .head3 {
   color: violet;
-  font-weight: lighter;
+  font-weight: normal;
   background-color: blue;
   border-radius: 5px;
+  background-image: var(--gradient2);
+  background-clip: text;
+  color: transparent;
+  animation: tt-animation 7s infinite alternate;
+  background-size: 400%;
   
+}
+:root{
+  --gradient2:  linear-gradient(45deg,
+  rgb(139, 150, 249),
+  white,
+  rgb(2, 83, 101),
+  rgb(193, 181, 181),
+  rgb(137, 0, 200),
+  rgb(201, 89, 89));
+}
+@keyframes tt-animation {
+  0%{background-position: left;}
+  100%{background-position: right;}
 }
 
 .head3:hover{
@@ -811,7 +835,7 @@ animation: btn-animation 1s ;
   color: blueviolet;
   animation: paragraph-animation;
   font-size: 1.6vh;
-  font-weight: bold;
+  
 }
 .parc-p1{
   position: absolute;
@@ -820,7 +844,7 @@ animation: btn-animation 1s ;
   color: violet;
   clip-path: polygon(0 0, calc(var(--maskX) * 1%) 0, calc(var(--maskY) * 1%) 100%, 0% 100%);
   font-size: 1.6vh;
-  font-weight: bold;
+  
 }
 
 .hm-bg{
@@ -868,6 +892,38 @@ animation: btn-animation 1s ;
   margin-left: 10px;
 }
 
-@media screen and (max-width:390px) {
- 
+@media screen and (max-width:690px) {
+  .hm-bg{
+    display:flex;
+   
+  }
+  .name-div h1{
+    font-size: 100% !important;
+    margin-left: 15px;
+  }
+  .name-div h4{
+    font-size: 65% !important;
+    margin-left: 15px;
+  }
+  .parc-p{
+    color: aqua;
+    font-size: 1.1vh;
+
+    
+  }
+
+  .parc-p1{
+    font-size: 1.1vh;
+
+  }
 }
+
+/* @media screen and (max-width:590px) {
+
+  .parc-p{
+    font-size: 75% !important;
+  }
+  .parc-p1{
+    font-size: 75% !important;
+  }
+} */
